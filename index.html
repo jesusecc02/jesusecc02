@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús Eduardo Castro Castellanos | Portafolio</title>
+  
+  <!-- Fuentes editoriales de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #111111;
+      --muted: #666666;
+      --border: #e5e5e5;
+      --link: #0044cc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Navegación superior */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 50px;
+      font-size: 0.9rem;
+    }
+
+    nav .logo {
+      font-family: 'Newsreader', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    nav .links a {
+      margin-left: 20px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav .links a:hover {
+      color: var(--text);
+    }
+
+    /* Sección Hero */
+    .hero {
+      margin-bottom: 70px;
+    }
+
+    .hero-line {
+      width: 40px;
+      height: 2px;
+      background-color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-family: 'Newsreader', serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero .tagline {
+      font-size: 1.15rem;
+      color: #333333;
+      max-width: 680px;
+      margin-bottom: 14px;
+    }
+
+    .hero .location {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .contact-links a {
+      margin-right: 18px;
+      font-size: 0.95rem;
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .contact-links a:hover {
+      color: var(--link);
+    }
+
+    /* Estructura a dos columnas (Secciones) */
+    .section-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 30px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-family: 'Newsreader', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .section-line {
+      width: 30px;
+      height: 1.5px;
+      background-color: var(--text);
+      margin-top: 10px;
+    }
+
+    /* Elementos / Proyectos */
+    .item-list {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .item-header h3 {
+      font-family: 'Newsreader', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .item-header a.action-link {
+      font-size: 0.85rem;
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 580px;
+    }
+
+    /* Adaptabilidad a dispositivos móviles */
+    @media (max-width: 680px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+      nav .links a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+      .section-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Barra de navegación -->
+    <nav>
+      <a href="#" class="logo">Jesús Eduardo Castro</a>
+      <div class="links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </nav>
+
+    <!-- Encabezado Principal / Hero -->
+    <section class="hero">
+      <div class="hero-line"></div>
+      <h1>Jesús Eduardo Castro Castellanos</h1>
+      <p class="tagline">
+        Financial Analyst & Finance Business Partner specializing in P&L frameworks, forecasting, and quantitative financial modeling.
+      </p>
+      <p class="location">Sinaloa, Mexico</p>
+      <div class="contact-links">
+        <a href="mailto:tu-correo@email.com">Email</a>
+        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Resume (PDF)</a>
+      </div>
+    </section>
+
+    <!-- Sección: Proyectos Seleccionados -->
+    <section class="section-grid" id="work">
+      <div>
+        <h2 class="section-title">Selected Work</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="item-list">
+        <!-- Proyecto 1 -->
+        <div class="item">
+          <div class="item-header">
+            <h3>Automated P&L Framework & Financial Modeling</h3>
+            <a href="#" class="action-link" target="_blank">View project</a>
+          </div>
+          <p>Built dynamic forecasting models and automated monthly P&L consolidation using Python and advanced spreadsheet automation.</p>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="item">
+          <div class="item-header">
+            <h3>Sales Forecasting & Predictive Analytics</h3>
+            <a href="#" class="action-link" target="_blank">View on GitHub</a>
+          </div>
+          <p>Developed time-series projection scripts and interactive reporting dashboards in Looker Studio for multi-unit retail performance.</p>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="item">
+          <div class="item-header">
+            <h3>Portfolio Optimization & Quantitative Analysis</h3>
+            <a href="#" class="action-link" target="_blank">View analysis</a>
+          </div>
+          <p>Risk-return simulation modeling asset allocation, Sharpe ratio maximization, and stress-testing using historical market data.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Experiencia / Liderazgo -->
+    <section class="section-grid" id="experience">
+      <div>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="item-list">
+        <div class="item">
+          <div class="item-header">
+            <h3>Coppel — Financial Analyst & Finance Business Partner</h3>
+            <span style="font-size: 0.85rem; color: #888;">2024 – Present</span>
+          </div>
+          <p>Partnering with business units to optimize operational expenditures, evaluate capital allocation, and provide data-driven forecasting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Credenciales / Educación -->
+    <section class="section-grid" id="certifications">
+      <div>
+        <h2 class="section-title">Credentials</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="item-list">
+        <div class="item">
+          <div class="item-header">
+            <h3>AMIB Serie 210</h3>
+            <span style="font-size: 0.85rem; color: #888;">Banquero de Apoyo Patrimonial</span>
+          </div>
+          <p>Certified in investment strategies, securities markets, and regulatory compliance by the Mexican Association of Financial Intermediaries.</p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <h3>B.S. in Finance (Licenciatura en Finanzas)</h3>
+            <span style="font-size: 0.85rem; color: #888;">Tecnológico de Monterrey</span>
+          </div>
+          <p>Focused on corporate finance, valuation methods, asset management, and quantitative modeling.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
