@@ -181,6 +181,18 @@
       font-weight: 500;
     }
 
+    .item-actions {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      white-space: nowrap;
+    }
+
+    .item-actions span.separator {
+      font-size: 0.85rem;
+      color: var(--border);
+    }
+
     .item p {
       font-size: 0.95rem;
       color: var(--muted);
@@ -325,11 +337,15 @@
           <p>Análisis fundamental y valuación estratégica con base en catalizadores clínicos, múltiplos comparables y proyecciones de flujo libre de caja para comités de inversión.</p>
         </div>
 
-        <!-- Proyecto 2: Portafolios -->
+<!-- Proyecto 2: Portafolios -->
         <div class="item">
           <div class="item-header">
             <h3>Optimización de Portafolios y Análisis Cuantitativo</h3>
-            <a href="https://colab.research.google.com/drive/1fGMqKsvJUxq125Q8x8GDSUcrAzv25h8j?usp=sharing" class="action-link" target="_blank">Ver Modelo en Colab</a>
+            <div class="item-actions">
+              <a href="Portafolios.pdf" class="action-link" target="_blank">Presentación (PDF)</a>
+              <span class="separator">·</span>
+              <a href="https://colab.research.google.com/drive/1fGMqKsvJUxq125Q8x8GDSUcrAzv25h8j?usp=sharing" class="action-link" target="_blank">Ver Modelo en Colab</a>
+            </div>
           </div>
           <p>Simulación de asignación óptima de activos basada en la frontera eficiente de Markowitz, maximización de ratio de Sharpe y pruebas de estrés con datos históricos.</p>
         </div>
@@ -338,11 +354,14 @@
         <div class="item">
           <div class="item-header">
             <h3>Modelación Predictiva y Series de Tiempo con Prophet</h3>
-            <a href="#" class="action-link" target="_blank">Ver Modelo en Colab</a>
+            <div class="item-actions">
+              <a href="Prophet.pdf" class="action-link" target="_blank">Presentación (PDF)</a>
+              <span class="separator">·</span>
+              <a href="#" class="action-link" target="_blank">Ver Modelo en Colab</a>
+            </div>
           </div>
           <p>Implementación de modelo de series temporales en Python para pronóstico de ventas y demanda, analizando estacionalidades y reduciendo el margen de error (MAPE).</p>
         </div>
-      </div>
     </section>
 
     <!-- Sección: Experiencia / Liderazgo -->
